@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+.ventana {
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.ventana {
+    background: #27282c;
+}
+
+.view-1 {
+    height: 100%;
+    width: 100%;
+
+
+    .view-1_center {
+        display: flex;
+        justify-content: space-between;
+        height: 60%;
+        padding: 0 2em;
+        padding-left:2.2em;
+
+        .icons {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            &>div {
+                margin-bottom: .5em;
+            }
+        }
+
+        .medio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+
+            .name {
+                font-size: 120px;
+                margin-bottom: 10px;
+                line-height: 90px;
+            }
+
+            .about-us {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+
+            .contact-button {
+                border: 2px solid white;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .izq {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            color: white;
+
+            .izq-flex {
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .text-home {
+                    transform: rotate(271deg);
+                    display: inline-block;
+                    margin-bottom:24px;
+                }
+
+                .linea {
+                    display: inline-block;
+                    height: 50px;
+                    width: 2px;
+                    border-radius: 10px;
+                    background: white;
+                }
+            }
+
+
+        }
+    }
+
+    .view-1_bottom{
+        display:flex;
+        justify-content: center;
+        align-items: flex-end;
+        height:25%;
+        flex-wrap: wrap;
+
+        & > div{
+            height:40px;
+            width:90px;
+            margin:0 10px;
+
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+    }
+}

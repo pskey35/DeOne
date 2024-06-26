@@ -1,0 +1,63 @@
+---
+import "../styles/index.scss";
+import Header from "../components/header.astro";
+
+const images = ["bottom-1.png", "bottom-2.png", 
+"bottom-3.png", "bottom-4.png","bottom-5.png","bottom-6.png","bottom-7.png",
+"bottom-8.png"];
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<div class="ventana">
+			<div class="view-1">
+				<Header />
+				<div class="view-1_center">
+					<div class="icons">
+						<div>
+							<img src="/public/facebook.png" alt="" />
+						</div>
+						<div>
+							<img src="/public/twitter.png" alt="" />
+						</div>
+						<div>
+							<img src="/public/instagram.png" alt="" />
+						</div>
+						<div>
+							<img src="/public/tiktok.png" alt="" />
+						</div>
+					</div>
+					<div class="medio">
+						<h1 class="name">DeOne</h1>
+						<h1 class="about-us">
+							Empresa de desarrollo de software
+						</h1>
+						<div class="contact-button">Contactar deOne</div>
+					</div>
+					<div class="izq">
+						<div class="izq-flex">
+							<span class="text-home">Home</span>
+							<span class="linea"></span>
+						</div>
+					</div>
+				</div>
+				<div class="view-1_bottom">
+					{images.map((item) => (
+						<div>
+							<img src={`/public/${item}`} alt="" />
+						</div>
+					))}
+					
+				
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
